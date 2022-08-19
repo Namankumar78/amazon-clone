@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import Header from './component/header/Header';
+import Payment from './component/payment/Payment';
 import Home from './component/home/Home';
 import Checkout from './component/checkout/Checkout';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
@@ -13,6 +14,9 @@ function App() {
         <Switch>
           <Route exact path='/checkout'>
             <Checkout />
+          </Route>
+          <Route exact path='/payment'>
+            <Payment />
           </Route>
           <Route path='/'>
             <Home />
